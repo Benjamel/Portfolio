@@ -1,0 +1,12 @@
+:root {
+    --font-family: "Roboto";
+    --font-family-element: "Indie Flower";
+    --font-size-h1: 56px;
+    --font-size-h2: 44px;
+    --font-size-h3: 36px;
+    --font-size-h3: 24px;
+    --font-size-paragraph: 20px;
+    --max-width: 1000px;
+    --margin: 0 auto;
+    --drop-shadow: 0 1px 5px #79C5DC;
+}

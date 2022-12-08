@@ -1,0 +1,268 @@
+@import url(/css/import/variables.css);
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family), "San Serif";
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+}
+
+p {
+    font-size: var(--font-size-paragraph);
+}
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.header_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header_logo img {
+    margin-left: 10px;
+    height: 40px;
+    border: 3px solid #79C5DC;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: var(--margin);
+    max-width: var(--max-width);
+    background-color: white;
+    box-shadow: var(--drop-shadow);
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li {
+    list-style: none;
+}
+
+
+.mywork_btn a {
+    color: white;
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Header section */
+/* Waving hand */
+.wave {
+    animation-name: wave-animation;
+    /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;
+    /* Change to speed up or slow down */
+    animation-iteration-count: infinite;
+    /* Never stop waving :) */
+    transform-origin: 70% 70%;
+    /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+.header_section {
+    /* background-color: E1E1E1#; */
+    /* background-color: black; */
+    height: 100vh;
+    background-image: url("/images/melchior-damu-IvTCN1H4X1k-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    margin: var(--margin);
+    margin-top: 300px;
+}
+
+.header,
+h1,
+p {
+    color: white;
+}
+
+.header_content {
+    margin-left: 25%;
+}
+
+.header_content h1 {
+    margin-bottom: 10px;
+}
+
+
+.element_text {
+    font-size: 14px;
+    font-style: italic;
+    font-family: var(--font-family-element);
+    color: white;
+}
+
+.element_text.right {
+    text-align: right;
+}
+
+.element_text.body {
+    margin: 10px 0 0 10px;
+}
+
+.element_text.section {
+    margin: 10px 0 0 20px;
+}
+
+.element_text.section_end {
+    position: absolute;
+    bottom: 0px;
+    margin: 0 0 10px 20px;
+}
+
+.header_content span {
+    display: block;
+}
+
+/* About section */
+.about_section {
+    background-color: black;
+    height: 100vh;
+}
+
+.about_content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.element_text.section_about {
+    padding: 10px 0 0 10px;
+}
+
+.about-header {
+    padding: 0 auto;
+}
+
+.about_header img {
+    height: 300px;
+    border-radius: 20px;
+    margin: 20px 0 20px 0;
+}
+
+.about_main-content {
+    margin-bottom: 15px;
+}
+
+.current_skills h3 {
+    color: white;
+}
+
+.current_skills img {
+    margin-top: 10px;
+}
+
+.current_skills span {
+    margin-left: 30px;
+}
+
+/* .background_img {
+    display: flex;
+    background-image: url(/images/thenanobel-programming-17.01-inkscape-svg.svg);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    max-width: 300px;
+    margin: 0 auto;
+} */
+
+.element_text.section_about-end {
+    padding-left: 10px;
+}
+
+/* My work section */
+.mywork_section {
+    background-color: #BBD3D4;
+    height: 100vh;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .header_content {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 450px) {
+    .header_content {
+        margin-left: 5px;
+    }
+}
