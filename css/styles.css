@@ -30,6 +30,15 @@ body {
     margin: 0 auto;
 }
 
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.scroll_snap {
+    scroll-snap-align: start;
+}
+
 /* Navbar */
 .header_logo {
     display: flex;
