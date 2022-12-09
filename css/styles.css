@@ -292,8 +292,8 @@ p {
 }
 
 @media (max-width: 450px) {
-    .header_content {
-        margin-left: 10px;
+    .header {
+        margin-top: 50px;
     }
 
     h1 {
@@ -310,6 +310,10 @@ p {
 
     p {
         font-size: var(--font-size-paragraph-phone);
+    }
+
+    .about_header {
+        margin-top: 50px;
     }
 
     .about_main-content {
@@ -329,7 +333,6 @@ p {
     }
 
     .tech_tools {
-
         display: flex;
         flex-direction: row;
         justify-content: center;
