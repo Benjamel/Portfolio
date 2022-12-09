@@ -132,6 +132,7 @@ nav li {
 .header_section {
     /* background-color: E1E1E1#; */
     /* background-color: black; */
+    position: relative;
     height: 100vh;
     background-image: url("/images/melchior-damu-IvTCN1H4X1k-unsplash.jpg");
     background-position: center;
@@ -186,6 +187,7 @@ p {
 
 /* About section */
 .about_section {
+    position: relative;
     background-color: black;
     height: 100vh;
 }
@@ -193,6 +195,9 @@ p {
 .about_content {
     max-width: 600px;
     margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
 }
 
 .element_text.section_about {
@@ -237,7 +242,7 @@ p {
     /* margin-top: 10px; */
 }
 
-.current_skills span {
+.current_skills.tech_tools {
     margin-left: 30px;
 }
 
@@ -252,11 +257,15 @@ p {
 } */
 
 .element_text.section_about-end {
-    padding-left: 10px;
+    margin-left: 5px;
+    position: absolute;
+    bottom: 0;
+
 }
 
 /* My work section */
 .mywork_section {
+    position: relative;
     background-color: #BBD3D4;
     height: 100vh;
 }
@@ -276,5 +285,45 @@ p {
 @media (max-width: 450px) {
     .header_content {
         margin-left: 10px;
+    }
+
+    h1 {
+        font-size: var(--font-size-h1-phone);
+    }
+
+    h2 {
+        font-size: var(--font-size-h2-phone);
+    }
+
+    h3 {
+        font-size: var(--font-size-h3-phone);
+    }
+
+    p {
+        font-size: var(--font-size-paragraph-phone);
+    }
+
+    .about_main-content {
+        margin-top: 10%;
+    }
+
+    .current_skills {
+        margin-top: 10%;
+    }
+
+    .tech_skills{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tech_tools {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 }
