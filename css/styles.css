@@ -141,7 +141,7 @@ nav li {
 
 .header {
     margin: var(--margin);
-    margin-top: 300px;
+    margin-top: 20px;
 }
 
 .header,
@@ -170,18 +170,14 @@ p {
     text-align: right;
 }
 
-.element_text.body {
-    margin: 10px 0 0 10px;
-}
-
 .element_text.section {
-    margin: 10px 0 0 20px;
+    margin-left: 5px;
 }
 
 .element_text.section_end {
     position: absolute;
     bottom: 0px;
-    margin: 0 0 10px 20px;
+    margin-left: 5px;
 }
 
 .header_content span {
@@ -200,21 +196,37 @@ p {
 }
 
 .element_text.section_about {
-    padding: 10px 0 0 10px;
+    margin-left: 5px;
 }
 
 .about-header {
     padding: 0 auto;
 }
 
-.about_header img {
-    height: 300px;
-    border-radius: 20px;
-    margin: 20px 0 20px 0;
+.about_main-content {
+    display: grid;
+    /* margin-bottom: 15px; */
 }
 
-.about_main-content {
-    margin-bottom: 15px;
+.about_main-content img {
+    max-height: 150px;
+    border-radius: 20px;
+    grid-area: 2;
+    object-fit: cover;
+    /* margin: 20px 0 20px 0; */
+}
+
+.about_main-content p{
+    max-width: 350px;
+    grid-area: 2;
+}
+
+.element_text.start_tag {
+    grid-area: 1 / 1;
+}
+
+.element_text.end_tag {
+    grid-area: 3 / 1  ;
 }
 
 .current_skills h3 {
@@ -222,7 +234,7 @@ p {
 }
 
 .current_skills img {
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 .current_skills span {
@@ -263,6 +275,6 @@ p {
 
 @media (max-width: 450px) {
     .header_content {
-        margin-left: 5px;
+        margin-left: 10px;
     }
 }
