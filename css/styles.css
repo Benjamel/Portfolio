@@ -32,11 +32,10 @@ body {
 
 html {
     scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
 }
 
 .scroll_snap {
-    scroll-snap-align: start;
+    scroll-snap-align: center;
 }
 
 /* Navbar */
@@ -247,10 +246,6 @@ p {
     color: white;
 }
 
-.current_skills img {
-    /* margin-top: 10px; */
-}
-
 .current_skills.tech_tools {
     margin-left: 30px;
 }
@@ -275,8 +270,17 @@ p {
 /* My work section */
 .mywork_section {
     position: relative;
-    background-color: #BBD3D4;
+    /* background-color: #BBD3D4; */
+    background-color: black;
     height: 100vh;
+}
+
+.work-end {
+    margin-bottom: 20px;
+}
+
+.mywork_section .body-end {
+    margin: 0;
 }
 
 @media (max-width: 600px) {
