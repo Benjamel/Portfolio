@@ -366,6 +366,7 @@ p {
 .slide-arrow:hover,
 .slide-arrow:focus {
     opacity: 1;
+    cursor: pointer;
 }
 
 #slide-arrow-prev {
