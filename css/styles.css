@@ -209,7 +209,6 @@ p {
     position: relative;
     /* transform: translateY(25%); */
     margin-top: calc(15vh);
-
 }
 
 .element_text.section_about {
@@ -262,13 +261,11 @@ p {
     margin-left: 5px;
     position: absolute;
     bottom: 0;
-
 }
 
 /* My work section */
 .mywork_section {
     position: relative;
-    /* background-color: #BBD3D4; */
     background-color: black;
     height: 100vh;
 }
@@ -282,7 +279,7 @@ p {
 }
 
 .mywork_section h1 {
-    margin: 10px auto;
+    margin-top: 5%;
     text-align: center;
 }
 
@@ -302,10 +299,11 @@ p {
 
 .carousel_image {
     width: 100%;
-    height: 415px;
+    height: 480px;
+    border: 1px solid lightgrey;
     object-fit: cover;
     aspect-ratio: 16 / 9;
-    object-position: center;
+    object-position: top;
     scroll-snap-align: center;
 }
 
@@ -343,11 +341,11 @@ p {
     grid-template-rows: 1fr;
 }
 
-.slide_container-wrapper a {
-    text-decoration: none;
-    color: black;
+.slide_container-wrapper>div {
+    background-color: white;
+    align-items: center;
+    text-align: center;
 }
-
 
 .slide-arrow {
     position: absolute;
