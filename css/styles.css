@@ -150,7 +150,8 @@ nav li {
 
 .header {
     margin: var(--margin);
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin-top: calc(25vh);
 }
 
 .header,
@@ -169,7 +170,7 @@ p {
 
 
 .element_text {
-    font-size: 14px;
+    font-size: 12px;
     font-style: italic;
     font-family: var(--font-family-element);
     color: white;
@@ -206,30 +207,25 @@ p {
     padding-left: 10px;
     padding-right: 10px;
     position: relative;
+    /* transform: translateY(25%); */
+    margin-top: calc(15vh);
+
 }
 
 .element_text.section_about {
     margin-left: 5px;
 }
 
-.about-header {
-    padding: 0 auto;
+.about_header {
+    margin-bottom: 10px;
 }
 
 .about_main-content {
     display: grid;
-    /* margin-bottom: 15px; */
+    margin-bottom: 20px;
 }
 
-.about_main-content img {
-    max-height: 150px;
-    border-radius: 20px;
-    grid-area: 2;
-    object-fit: cover;
-    /* margin: 20px 0 20px 0; */
-}
-
-.about_main-content p{
+.about_main-content p {
     max-width: 350px;
     grid-area: 2;
 }
@@ -239,7 +235,7 @@ p {
 }
 
 .element_text.end_tag {
-    grid-area: 3 / 1  ;
+    grid-area: 3 / 1;
 }
 
 .current_skills h3 {
@@ -250,15 +246,17 @@ p {
     margin-left: 30px;
 }
 
-/* .background_img {
-    display: flex;
-    background-image: url(/images/thenanobel-programming-17.01-inkscape-svg.svg);
+.background_img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url(/images/christmas-tree-gb701591d5_1280.png);
     background-repeat: no-repeat;
-    background-size: 300px;
-    height: 300px;
-    max-width: 300px;
-    margin: 0 auto;
-} */
+    background-position: center;
+    background-size: 200px;
+    height: 250px;
+    width: 250px;
+}
 
 .element_text.section_about-end {
     margin-left: 5px;
@@ -283,6 +281,141 @@ p {
     margin: 0;
 }
 
+.mywork_section h1 {
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* Slider carousel */
+.carousel_container {
+    margin: 0px auto;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    max-width: var(--max-width);
+    max-height: 540px;
+    scroll-behavior: smooth;
+    box-shadow: var(--drop-shadow);
+    margin-top: calc(15vh);
+}
+
+.carousel_image {
+    width: 100%;
+    height: 415px;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+    object-position: center;
+    scroll-snap-align: center;
+}
+
+.slides-container {
+    height: calc(100vh - 2rem);
+    width: 100%;
+    list-style: none;
+    overflow: scroll;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: both mandatory;
+    overflow-y: hidden;
+
+}
+
+.slides-container {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+}
+
+/* WebKit */
+.slides-container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.slide_container-wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    grid-template-rows: 1fr;
+}
+
+.slide_container-wrapper a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.slide-arrow {
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 65px;
+    background-color: black;
+    border: none;
+    width: 2rem;
+    font-size: 50px;
+    padding: 0;
+    opacity: 0.8;
+    transition: 250ms;
+}
+
+.slide-arrow:hover,
+.slide-arrow:focus {
+    opacity: 1;
+}
+
+#slide-arrow-prev {
+    left: 0;
+    padding-left: 0.25rem;
+    color: white;
+}
+
+#slide-arrow-next {
+    right: 0;
+    padding-left: 0.75rem;
+    color: white;
+}
+
+/* Loader */
+.error {
+    border: 1px solid darkred;
+    padding: 1rem;
+    color: darkred;
+    background: rgba(255, 0, 0, 0.1);
+}
+
+.message {
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+.loader {
+    border: 16px solid #79C5DC;
+    border-top: 16px #79C5DC;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 20px auto;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Media Queries */
 @media (max-width: 600px) {
     nav {
         flex-direction: column;
@@ -317,29 +450,26 @@ p {
     }
 
     .about_header {
-        margin-top: 50px;
+        /* margin-top: 50px; */
     }
 
     .about_main-content {
-        margin-top: 10%;
+        /* margin-top: 10%; */
     }
 
     .current_skills {
-        margin-top: 10%;
+        /* margin-top: 10%; */
     }
 
-    .tech_skills{
-        margin-top: 10%;
+    .tech_skills {
         display: flex;
         flex-direction: row;
-        justify-content: center;
         align-items: center;
     }
 
     .tech_tools {
         display: flex;
         flex-direction: row;
-        justify-content: center;
         align-items: center;
     }
 }
