@@ -62,7 +62,6 @@ nav {
     justify-content: space-between;
     margin: var(--margin);
     max-width: var(--max-width);
-    margin-top: 50px;
     background-color: white;
     box-shadow: var(--drop-shadow);
 }
