@@ -19,10 +19,12 @@ h2 {
 
 h3 {
     font-size: var(--font-size-h3);
+    color: white;
 }
 
 p {
     font-size: var(--font-size-paragraph);
+    color: white;
 }
 
 body {
@@ -60,6 +62,7 @@ nav {
     justify-content: space-between;
     margin: var(--margin);
     max-width: var(--max-width);
+    margin-top: 50px;
     background-color: white;
     box-shadow: var(--drop-shadow);
 }
@@ -103,6 +106,7 @@ li a:hover {
 }
 
 .header {
+    position: relative;
     margin: var(--margin);
     /* margin-top: 20px; */
     margin-top: calc(25vh);
@@ -149,6 +153,28 @@ p {
     display: block;
 }
 
+
+/* To the top button */
+#myBtn {
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 50px;
+    transform: rotate(270deg);
+    background-color: black;
+}
+
+#myBtn:hover {
+    color: red;
+}
+
 /* About section */
 .about_section {
     position: relative;
@@ -162,7 +188,6 @@ p {
     padding-left: 10px;
     padding-right: 10px;
     position: relative;
-    /* transform: translateY(25%); */
     margin-top: calc(15vh);
 }
 
@@ -175,21 +200,11 @@ p {
 }
 
 .about_main-content {
-    display: grid;
     margin-bottom: 20px;
 }
 
 .about_main-content p {
     max-width: 350px;
-    grid-area: 2;
-}
-
-.element_text.start_tag {
-    grid-area: 1 / 1;
-}
-
-.element_text.end_tag {
-    grid-area: 3 / 1;
 }
 
 .current_skills h3 {
@@ -203,7 +218,7 @@ p {
 .background_img {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 50px;
     background-image: url(/images/christmas-tree-gb701591d5_1280.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -272,7 +287,6 @@ p {
     scroll-behavior: smooth;
     scroll-snap-type: both mandatory;
     overflow-y: hidden;
-
 }
 
 .slides-container {
@@ -298,8 +312,8 @@ p {
 
 .slide_container-wrapper>div {
     background-color: white;
-    align-items: center;
     text-align: center;
+    align-items: center;
 }
 
 .slide-arrow {
