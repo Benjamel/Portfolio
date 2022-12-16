@@ -25,7 +25,7 @@ window.onscroll = function () { scrollFunction() };
 scrollUpBtn.addEventListener("click", topFunction);
 
 function scrollFunction() {
-    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         scrollUpBtn.style.display = "block";
     } else {
         scrollUpBtn.style.display = "none";
