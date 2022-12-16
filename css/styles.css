@@ -206,8 +206,8 @@ p {
     max-width: 350px;
 }
 
-.current_skills h3 {
-    color: white;
+.about_content h3 {
+    margin-top: 10px;
 }
 
 .current_skills.tech_tools {
@@ -252,13 +252,20 @@ p {
     text-align: center;
 }
 
+.mywork_section h1 .element_text {
+    display: inline-block;
+    text-align: left;
+}
+
+
+
 /* Slider carousel */
 .carousel_container {
     margin: 0px auto;
     object-fit: cover;
     position: relative;
     overflow: hidden;
-    width: 80%;
+    width: 90%;
     max-width: var(--max-width);
     max-height: 540px;
     scroll-behavior: smooth;
@@ -267,8 +274,9 @@ p {
 }
 
 .carousel_image {
+    display: flex;
     width: 100%;
-    height: 480px;
+    max-height: 480px;
     border: 1px solid lightgrey;
     object-fit: cover;
     aspect-ratio: 16 / 9;
@@ -277,7 +285,7 @@ p {
 }
 
 .slides-container {
-    height: calc(100vh - 2rem);
+    /* height: calc(100vh - 2rem); */
     width: 100%;
     list-style: none;
     overflow: scroll;
@@ -313,6 +321,10 @@ p {
     background-color: white;
     text-align: center;
     align-items: center;
+}
+
+.slide_container-wrapper a {
+    text-decoration: none;
 }
 
 .slide-arrow {
