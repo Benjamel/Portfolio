@@ -4,11 +4,10 @@
 
 ## Description
 
-## Add description
+My first attempt on a portfolio to showcase my previous work. Some brief information about me and the option to check out my linkedin and github which is linked through the page. 
 
--
--
--
+- Showcasing previous work thorugh a carousell
+- Updates coming.. 
 
 ## Built With
 
