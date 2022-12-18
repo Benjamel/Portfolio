@@ -1,14 +1,13 @@
 # Portfolio
 
-##Add image of the live website
+![image](https://user-images.githubusercontent.com/82838871/208254912-6a821fc1-03b9-4add-b571-d0af3ff0c0fe.png)
 
 ## Description
 
-## Add description
+My first attempt on a portfolio to showcase my previous work. Some brief information about me and the option to check out my linkedin and github which is linked through the page. 
 
--
--
--
+- Showcasing previous work thorugh a carousell
+- Updates coming.. 
 
 ## Built With
 
