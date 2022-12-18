@@ -51,7 +51,7 @@ html {
 .header_logo img {
     margin-left: 10px;
     height: 40px;
-    border: 3px solid #79C5DC;
+    border: 3px solid #38b4da;
     padding: 5px;
     border-radius: 50%;
 }
@@ -253,8 +253,6 @@ p {
     text-align: left;
 }
 
-
-
 /* Slider carousel */
 .carousel_container {
     margin: 0px auto;
@@ -266,7 +264,6 @@ p {
     max-height: 540px;
     scroll-behavior: smooth;
     box-shadow: 1px 0 5px white;
-    /* border: 1px solid white; */
     margin-top: calc(15vh);
 }
 
@@ -274,7 +271,6 @@ p {
     display: flex;
     width: 100%;
     max-height: 480px;
-    border: 1px solid lightgrey;
     object-fit: cover;
     aspect-ratio: 16 / 9;
     object-position: top;
@@ -456,4 +452,14 @@ p {
         height: 300px;
     }
 
+    .about_content {
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-height: 700px) {
+    .background_img {
+        display: none;
+    }
 }
