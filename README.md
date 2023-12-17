@@ -4,7 +4,7 @@
 
 ## Description
 
-My first attempt on a portfolio to showcase my previous work. Some brief information about me and the option to check out my linkedin and github which is linked through the page. 
+My portfolio to showcase my previous work. Some brief information about me and the option to check out my linkedin and github which is linked through the page. 
 
 - Showcasing previous work thorugh a carousell
 - Updates coming.. 
@@ -14,6 +14,8 @@ My first attempt on a portfolio to showcase my previous work. Some brief informa
 - HTML/CSS
 - JavaScript
 - Adobe XD for design
+
+- Working on recreating the website to ReactJS/TypeScript
 
 ### Installing
 
@@ -37,14 +39,6 @@ To run the app, run the following commands:
 npm run start
 ```
 
-## Contributing
-
--
-
 ## Contact
 
-[My LinkedIn page](https://www.linkedin.com/in/benjaminmeldal/)
-
-## License
-
--
+[My LinkedIn page](https://www.linkedin.com/in/benjaminmeldal
