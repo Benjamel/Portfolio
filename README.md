@@ -41,4 +41,4 @@ npm run start
 
 ## Contact
 
-[My LinkedIn page](https://www.linkedin.com/in/benjaminmeldal
+[My LinkedIn page](https://www.linkedin.com/in/benjaminmeldal)
